@@ -43,7 +43,8 @@ void MergeSort(int A[], int l, int h) {
 
 // Function to calculate the overall power of the array
 long long calculateOverallPower(int A[], int N) {
-    MergeSort(A, 0, N - 1);  // First sort the array
+    MergeSort(A, 0, N - 1);  
+    // First sort the array
     
     long long sumAbsDiff = 0, prefixSum = 0;  // Initialize variables for calculations
     int maxStrength = A[N - 1];  // Maximum strength is the last element after sorting
